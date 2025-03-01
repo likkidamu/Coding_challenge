@@ -50,6 +50,8 @@ python worker.py
 - Open the InfluxDB UI and check if the data is being inserted into the InfluxDB.
 - You can run **Flux queries** to verify the data being inserted.
 
+6.Dashboard:
+(/Visualization.png)
 Troubleshooting
 
 - If you encounter issues with InfluxDB token or credentials, double-check the credentials in both the InfluxDB UI and `worker.py`.
