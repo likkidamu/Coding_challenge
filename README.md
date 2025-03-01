@@ -52,7 +52,7 @@ python worker.py
 
 6. Dashboard
 
-![Dashboard Visualization](assets/Visualization.png)
+![Dashboard Visualization](assest/Visualization.png)
 
 7.Troubleshooting
 
