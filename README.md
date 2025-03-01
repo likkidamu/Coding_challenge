@@ -1,10 +1,10 @@
 
 ```markdown
-# Kafka, ZooKeeper, InfluxDB Integration with Python Generator and Worker
+Kafka, ZooKeeper, InfluxDB Integration with Python Generator and Worker
 
 This project sets up Kafka, ZooKeeper, and InfluxDB in a Docker container, and uses Python scripts for generating and consuming messages to InfluxDB via Kafka.
 
-## Prerequisites
+Prerequisites
 
 - Docker and Docker Compose installed
 - Python 3.x installed
