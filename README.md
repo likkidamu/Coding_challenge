@@ -1,5 +1,3 @@
-
-
 Kafka, ZooKeeper, InfluxDB Integration with Python Generator and Worker
 
 This project sets up Kafka, ZooKeeper, and InfluxDB in a Docker container, and uses Python scripts for generating and consuming messages to InfluxDB via Kafka.
@@ -13,7 +11,7 @@ Prerequisites
 Setup Instructions
 
 1. Start the Docker Containers
-To start the Kafka, ZooKeeper, and InfluxDB containers in the background, use the following command in the terminal:
+   To start the Kafka, ZooKeeper, and InfluxDB containers in the background, use the following command in the terminal:
 
 ```bash
 docker compose up -d
@@ -22,6 +20,7 @@ docker compose up -d
 This will start all services as defined in the `docker-compose.yml` file.
 
 2. Configure InfluxDB
+
 - Open the InfluxDB UI in your browser.
 - Create an admin user in the UI.
 - Update your local environment with the credentials you created in the InfluxDB UI.
@@ -38,21 +37,24 @@ python datagenerator.py
 
 This script will begin generating Kafka messages.
 
- 4. Run the Worker
+4.  Run the Worker
 
 Open another terminal and run the worker script to consume messages from Kafka and insert data into InfluxDB:
 
 ```bash
 python worker.py
 ```
+
 5. Verify Data in InfluxDB
 
 - Open the InfluxDB UI and check if the data is being inserted into the InfluxDB.
 - You can run **Flux queries** to verify the data being inserted.
 
-6.Dashboard:
-(/Visualization.png)
-Troubleshooting
+6. Dashboard
+
+![Dashboard Visualization](assets/Visualization.png)
+
+7.Troubleshooting
 
 - If you encounter issues with InfluxDB token or credentials, double-check the credentials in both the InfluxDB UI and `worker.py`.
 - Ensure that all services are running by checking the status of the Docker containers:
