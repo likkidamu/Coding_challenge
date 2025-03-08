@@ -22,11 +22,11 @@ while True:
     message = generate_message()
     
     try:
-        # Send message to 'color-topic'
+       
         producer.send('color-topic', json.dumps(message).encode('utf-8')).get(timeout=10)
         print(f"Sent: {message}")
     except KafkaError as e:
         print(f"Error while sending message: {e}")
     
-    time.sleep(10)  # Send a message every 1 second
+    time.sleep(10)  
 
