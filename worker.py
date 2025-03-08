@@ -14,9 +14,7 @@ bucket = "Default_bucket"
 write_api = client.write_api(write_options=SYNCHRONOUS)
 
 consumer = KafkaConsumer('color-topic', bootstrap_servers='localhost:9092')
-
 color_data = {}
-
 for message in consumer:
     data = json.loads(message.value.decode('utf-8'))
     color = data['color']
